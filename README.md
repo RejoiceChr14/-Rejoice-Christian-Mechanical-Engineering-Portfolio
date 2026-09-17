@@ -1,51 +1,51 @@
 # Rejoice Christian — Engineering Portfolio
 
-A portable version of the existing portfolio, ready for GitHub Pages. Includes the professional headshot, About section, engineering projects, experience, skills, education, contact links, and résumé download.
+A project-focused personal website built with plain HTML and CSS. The homepage begins with an introduction and portrait, then presents personal and course projects, followed by expandable team and industry project summaries.
 
-This website uses plain HTML and CSS. No installation, build command, framework, or paid hosting service is required for this package. You can open `index.html` directly in your browser to preview it.
+**Live site:** [Rejoice Christian’s portfolio](https://rejoicechr14.github.io/-Rejoice-Christian-Mechanical-Engineering-Portfolio/)
 
-## Publish on GitHub Pages
+## Edit the website
 
-The website files are stored in this repository:
-[RejoiceChr14/-Rejoice-Christian-Mechanical-Engineering-Portfolio](https://github.com/RejoiceChr14/-Rejoice-Christian-Mechanical-Engineering-Portfolio).
-
-1. Open this repository's [Settings → Pages](https://github.com/RejoiceChr14/-Rejoice-Christian-Mechanical-Engineering-Portfolio/settings/pages).
-2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-3. Select **main**, choose **/ (root)**, and click **Save**.
-4. After GitHub finishes publishing, open the website address shown on the same settings page.
-
-Your expected website address after activation is:
-`https://rejoicechr14.github.io/-Rejoice-Christian-Mechanical-Engineering-Portfolio/`
-
-The address becomes available after Pages is enabled and its deployment succeeds. Uploading these files alone does not enable GitHub Pages. Publishing makes the portfolio, its contact details, and its résumé available online.
-
-All asset links use relative paths so the site works both in a project repository and at a personal domain's root.
-
-Official instructions: [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) and [Configuring a publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-
-## Make it your own
-
-| What to change | File and location |
+| Content | File |
 | --- | --- |
-| Intro, project descriptions, experience, skills, About, education, and contact details | `index.html`; search for the section's heading or its `id` |
-| Colors | `styles.css`, in the `:root` section at the top |
-| Spacing, fonts, portrait crop, and mobile layouts | `styles.css` |
-| Headshot | Replace `assets/rejoice-christian-headshot.webp`; use the same filename or update the image links in `index.html` |
-| Résumé | Replace `assets/rejoice-christian-resume.pdf` with your latest PDF |
-| Browser-tab icon | Replace `assets/favicon.svg` |
-| Copyright year | Search for the copyright text in `index.html` |
+| About me, project cards, SAE and UL project summaries, contact links | `index.html` |
+| ME 347 gear-ratio fidget project | `projects/gear-fidget.html` |
+| Catapult project | `projects/catapult.html` |
+| iPhone repair project | `projects/iphone.html` |
+| Bluetooth speaker project | `projects/speaker.html` |
+| Colors, type, spacing, image crops, and mobile layouts | `styles.css` |
+| Portrait | `assets/rejoice-christian-headshot.webp` |
+| Project photos | `assets/projects/` |
+| Résumé PDF | `assets/rejoice-christian-resume.pdf` |
 
-Edit a file in GitHub and commit the change to `main`; Pages will publish the update. To add a project, copy one complete `<article class="project-card">` block inside the Selected work section and replace its contents. Keep the file and folder names consistent with the links in `index.html`.
+Edit and commit to the `main` branch. GitHub Pages publishes from the repository root. No build command or package installation is required.
 
-The About section uses the existing portrait crop. Adjust `.portrait-frame img` in `styles.css` to change its position. Mobile layouts are defined near the bottom of that file.
+You can open `index.html` directly, or run a local server from this folder:
 
-UL Solutions examples use the existing high-level descriptions. Continue to exclude internal standards, test setups, data, pricing, and other confidential materials from future updates.
+```sh
+python3 -m http.server 8000
+```
 
-## Included files
+Then open `http://localhost:8000` in a browser.
 
-- `index.html` — the complete editable webpage, including embedded vector icons.
-- `styles.css` — the portfolio's design and responsive layouts.
-- `assets/` — headshot, résumé, favicon, browser reset styles, and third-party license notices.
-- `.nojekyll` — tells GitHub Pages to serve the prepared static files.
+## Add another project
 
-The browser reset is from Tailwind CSS (MIT license); the embedded icons are from Lucide (ISC/MIT notices). Their license files are included in `assets/`. Personal content and supplied assets remain their owners' property.
+1. Copy a page from `projects/` and give it a descriptive filename.
+2. Update its title, description, project facts, images, narrative, and navigation links.
+3. Place optimized project images in `assets/projects/`.
+4. Copy a homepage `<article class="project-card">` and update its link, image, and summary.
+5. Include descriptive alternative text for images and verify links on desktop and mobile.
+
+All website paths are relative so they work under the GitHub Pages repository URL. Keep `../` prefixes for shared assets referenced from project pages.
+
+## Content and media
+
+The Catapult, iPhone, and Speaker pages draw on Rejoice Christian’s original Google Sites project writeups and photos. Each detail page links to its original project archive for additional material. The speaker components image is identified as kit documentation. The speaker project is described as a kit build.
+
+The SAE contribution is described as team concept development. UL Solutions descriptions stay at a high level: do not add internal standards, test setups, data, pricing, or other confidential materials.
+
+The ME 347 gear-ratio fidget page draws on the supplied course presentation, including sketches, an early CAD prototype, a photo of the printed build, and documented limitations. Its 15:1 ratio is described as a design target, not a measured result. Selected assets avoid the student identifier visible elsewhere in the deck.
+
+Contact links and the résumé appear in the footer of each HTML page. Update all five pages if these links change.
+
+The website uses no JavaScript, external fonts, or third-party embeds. Previously included license notices remain in `assets/`. Personal content and supplied assets remain their owners’ property.
