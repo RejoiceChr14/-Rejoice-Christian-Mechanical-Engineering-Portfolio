@@ -1,51 +1,43 @@
 # Rejoice Christian — Engineering Portfolio
 
-A project-focused personal website built with plain HTML and CSS. The homepage begins with an introduction and portrait, then presents personal and course projects, followed by expandable team and industry project summaries.
+A static portfolio built with HTML and CSS. About Me and the portrait lead the homepage. Every project opens in the same browser tab, with its narrative, images, results, and available videos contained on its own page.
 
 **Live site:** [Rejoice Christian’s portfolio](https://rejoicechr14.github.io/-Rejoice-Christian-Mechanical-Engineering-Portfolio/)
 
-## Edit the website
+## Project order
 
-| Content | File |
+The gallery leads with mechanical design, analysis, and physical prototyping, followed by laboratory documentation, electronics, and business support:
+
+1. Traffic mast-arm design — `projects/mast-arm.html`
+2. 15:1 gear-ratio fidget — `projects/gear-fidget.html`
+3. Catapult — `projects/catapult.html`
+4. Formula SAE push bar — `projects/sae-push-bar.html`
+5. Test reference guides — `projects/test-reference-guides.html`
+6. Bluetooth speaker — `projects/speaker.html`
+7. iPhone repairs — `projects/iphone.html`
+8. Department pricing initiative — `projects/pricing-initiative.html`
+
+## Editing
+
+| What to change | Location |
 | --- | --- |
-| About me, project cards, SAE and UL project summaries, contact links | `index.html` |
-| ME 347 gear-ratio fidget project | `projects/gear-fidget.html` |
-| Catapult project | `projects/catapult.html` |
-| iPhone repair project | `projects/iphone.html` |
-| Bluetooth speaker project | `projects/speaker.html` |
-| Colors, type, spacing, image crops, and mobile layouts | `styles.css` |
+| Introduction, ordered project cards, contact details | `index.html` |
+| Complete project stories | The matching page in `projects/` |
+| Colors, spacing, typography, responsive layout | `styles.css` |
+| Project images and inline videos | `assets/projects/` |
 | Portrait | `assets/rejoice-christian-headshot.webp` |
-| Project photos | `assets/projects/` |
-| Résumé PDF | `assets/rejoice-christian-resume.pdf` |
+| Résumé | `assets/rejoice-christian-resume.pdf` |
 
-Edit and commit to the `main` branch. GitHub Pages publishes from the repository root. No build command or package installation is required.
+Commit to `main` to publish through GitHub Pages. No build tool or dependency installation is required. For a local preview, run `python3 -m http.server 8000` in the repository root and open `http://localhost:8000`.
 
-You can open `index.html` directly, or run a local server from this folder:
+To add a project, copy an existing project page and its homepage card. Update the previous/next navigation to match the gallery order. Keep asset paths relative, using `../assets/` from project pages. Update contact links in all nine HTML pages when they change.
 
-```sh
-python3 -m http.server 8000
-```
+## Content conventions
 
-Then open `http://localhost:8000` in a browser.
+Keep the full project explanation on its page. Include relevant figures, photos, tables, and local video players directly. Do not redirect visitors to Google Sites, slide decks, or separate reports to understand the project. Videos use native controls and do not autoplay.
 
-## Add another project
+Distinguish measured tests from design targets and simulation results. The mast-arm figures and comparison values come from the ME 347 Project 2 report dated April 30, 2026. The catapult table reproduces the original trials; row means are calculated from those values. The gear ratio is a design target. The speaker is a kit build with supplied component ratings.
 
-1. Copy a page from `projects/` and give it a descriptive filename.
-2. Update its title, description, project facts, images, narrative, and navigation links.
-3. Place optimized project images in `assets/projects/`.
-4. Copy a homepage `<article class="project-card">` and update its link, image, and summary.
-5. Include descriptive alternative text for images and verify links on desktop and mobile.
+Selected gear-project media avoid the student identifier visible elsewhere in the source presentation. SAE work remains described as concept development. UL Solutions pages use only high-level information already approved for this portfolio; exclude internal test details, documents, pricing, and company data.
 
-All website paths are relative so they work under the GitHub Pages repository URL. Keep `../` prefixes for shared assets referenced from project pages.
-
-## Content and media
-
-The Catapult, iPhone, and Speaker pages draw on Rejoice Christian’s original Google Sites project writeups and photos. Each detail page links to its original project archive for additional material. The speaker components image is identified as kit documentation. The speaker project is described as a kit build.
-
-The SAE contribution is described as team concept development. UL Solutions descriptions stay at a high level: do not add internal standards, test setups, data, pricing, or other confidential materials.
-
-The ME 347 gear-ratio fidget page draws on the supplied course presentation, including sketches, an early CAD prototype, a photo of the printed build, and documented limitations. Its 15:1 ratio is described as a design target, not a measured result. Selected assets avoid the student identifier visible elsewhere in the deck.
-
-Contact links and the résumé appear in the footer of each HTML page. Update all five pages if these links change.
-
-The website uses no JavaScript, external fonts, or third-party embeds. Previously included license notices remain in `assets/`. Personal content and supplied assets remain their owners’ property.
+The site uses no JavaScript, external fonts, or third-party embeds. Previously included license notices remain in `assets/`. Personal content and supplied assets remain their owners’ property.

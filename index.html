@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rejoice Christian | Engineering Portfolio</title>
-  <meta name="description" content="Meet Rejoice Christian and explore his engineering projects: a 3D-printed gear fidget, team-built catapult, iPhone repairs, Bluetooth speaker, and industry work.">
+  <meta name="description" content="Rejoice Christian’s engineering portfolio, featuring structural FEA, mechanical design, prototyping, laboratory documentation, and personal builds.">
   <meta name="theme-color" content="#2458d3">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=projects-2">
   <link rel="preload" as="image" href="assets/rejoice-christian-headshot.webp">
 </head>
 <body id="top">
@@ -39,96 +39,43 @@
       </div>
     </section>
 
-    <section class="section" id="work" aria-labelledby="projects-title">
-      <div class="container">
-        <div class="section-heading">
-          <div><p class="eyebrow">Selected projects</p><h2 id="projects-title">Learning through making.</h2></div>
-          <p>Design projects, personal builds, and repairs.<br class="desktop-break"> A closer look at the work behind each one.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <a class="project-card-link" href="projects/gear-fidget.html">
-              <div class="project-cover gear-cover"><img src="assets/projects/gear-fidget-build.webp" width="1050" height="1400" alt="Rejoice holding the printed gear fidget with the lid removed to show the gears" loading="lazy"></div>
-              <div class="project-card-copy">
-                <p class="project-type">ME 347 · Design &amp; prototyping</p>
-                <h3>15:1 gear-ratio fidget</h3>
-                <p>Developing a mechanical fidget through sketches, CAD prototypes, and 3D printing, with lessons in gear clearance and tooth engagement.</p>
-                <span class="project-link">View project <span aria-hidden="true">↗</span></span>
-              </div>
-            </a>
-          </article>
-          <article class="project-card">
-            <a class="project-card-link" href="projects/catapult.html">
-              <div class="project-cover"><img src="assets/projects/catapult-frame.webp" width="1200" height="1202" alt="Wooden catapult frame during the team build" loading="lazy"></div>
-              <div class="project-card-copy">
-                <p class="project-type">Course project · Team build</p>
-                <h3>Catapult</h3>
-                <p>Designing and building a tennis-ball launcher with a $100 budget, common hand tools, and mechanical power.</p>
-                <span class="project-link">View project <span aria-hidden="true">↗</span></span>
-              </div>
-            </a>
-          </article>
-          <article class="project-card">
-            <a class="project-card-link" href="projects/iphone.html">
-              <div class="project-cover"><img src="assets/projects/iphone-repair.webp" width="1008" height="1128" alt="An opened iPhone with its display powered on during a repair" loading="lazy"></div>
-              <div class="project-card-copy">
-                <p class="project-type">Personal project · Repair</p>
-                <h3>iPhone repairs</h3>
-                <p>Exploring the internals of the iPhone 5 and 6 through screen replacement, troubleshooting, and donor parts.</p>
-                <span class="project-link">View project <span aria-hidden="true">↗</span></span>
-              </div>
-            </a>
-          </article>
-          <article class="project-card">
-            <a class="project-card-link" href="projects/speaker.html">
-              <div class="project-cover speaker-cover"><img src="assets/projects/speaker-build.webp" width="954" height="1500" alt="Assembled Bluetooth speaker kit in its clear enclosure" loading="lazy"></div>
-              <div class="project-card-copy">
-                <p class="project-type">Personal project · Kit build</p>
-                <h3>Bluetooth speaker</h3>
-                <p>Building a working speaker from a DIY kit while learning component identification, soldering, and assembly.</p>
-                <span class="project-link">View project <span aria-hidden="true">↗</span></span>
-              </div>
-            </a>
-          </article>
-        </div>
+    <section class="section" id="work" aria-labelledby="projects-title"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow">Selected projects</p><h2 id="projects-title">Engineering in practice.</h2></div><p>Design, analysis, and physical builds,<br class="desktop-break"> followed by laboratory work and personal repairs.</p></div>
+      <div class="project-grid">
+          <article class="project-card"><a class="project-card-link" href="projects/mast-arm.html">
+            <div class="project-cover analysis-cover"><img src="assets/projects/mast-arm-analysis.webp" width="1428" height="695" alt="ANSYS model of the trussed traffic mast arm beside its mesh quality plot" loading="lazy"></div>
+            <div class="project-card-copy"><p class="project-type">ME 347 Project 2 · Structural design &amp; FEA</p><h3>Traffic mast-arm design</h3><p>A SolidWorks and ANSYS study of wind loading, structural reinforcement, safety factor, and material tradeoffs.</p><span class="project-link">View project <span aria-hidden="true">↗</span></span></div>
+          </a></article>
+          <article class="project-card"><a class="project-card-link" href="projects/gear-fidget.html">
+            <div class="project-cover mechanism-cover"><img src="assets/projects/gear-fidget-demo-poster.webp" width="816" height="368" alt="Side view of the printed gear fidget with its internal gear train visible" loading="lazy"></div>
+            <div class="project-card-copy"><p class="project-type">ME 347 · Mechanism design &amp; prototyping</p><h3>15:1 gear-ratio fidget</h3><p>Developing a compact gear mechanism and learning from clearance, alignment, and tooth-skipping issues in the printed prototype.</p><span class="project-link">View project <span aria-hidden="true">↗</span></span></div>
+          </a></article>
+          <article class="project-card"><a class="project-card-link" href="projects/catapult.html">
+            <div class="project-cover "><img src="assets/projects/catapult-assembly.webp" width="1200" height="1200" alt="Assembled wooden catapult with its PVC axle and tennis-racket launch mechanism" loading="lazy"></div>
+            <div class="project-card-copy"><p class="project-type">Course project · Team design, build &amp; test</p><h3>Catapult</h3><p>Designing and building a launcher under a $100 budget, then comparing 12 recorded trials across four test conditions.</p><span class="project-link">View project <span aria-hidden="true">↗</span></span></div>
+          </a></article>
+          <article class="project-card"><a class="project-card-link" href="projects/sae-push-bar.html">
+            <div class="project-cover project-cover--text" aria-hidden="true"><span>UIC Formula SAE</span><strong>CAD concept<br>development.</strong></div>
+            <div class="project-card-copy"><p class="project-type">UIC Formula SAE · Team concept design</p><h3>Formula SAE push bar</h3><p>Contributing SolidWorks concepts for a push bar that would give the team a better way to move the vehicle.</p><span class="project-link">View project <span aria-hidden="true">↗</span></span></div>
+          </a></article>
+          <article class="project-card"><a class="project-card-link" href="projects/test-reference-guides.html">
+            <div class="project-cover project-cover--text" aria-hidden="true"><span>UL Solutions · Fluids lab</span><strong>6 tests.<br>Clearer guidance.</strong></div>
+            <div class="project-card-copy"><p class="project-type">UL Solutions · Fluids laboratory</p><h3>Test reference guides</h3><p>Organizing equipment, setup, procedures, and potential risks into accessible guides for infrequently performed laboratory tests.</p><span class="project-link">View project <span aria-hidden="true">↗</span></span></div>
+          </a></article>
+          <article class="project-card"><a class="project-card-link" href="projects/speaker.html">
+            <div class="project-cover speaker-cover"><img src="assets/projects/speaker-build.webp" width="954" height="1500" alt="The completed Bluetooth speaker in its clear acrylic enclosure" loading="lazy"></div>
+            <div class="project-card-copy"><p class="project-type">Personal project · Electronics &amp; assembly</p><h3>Bluetooth speaker</h3><p>Assembling the circuit board and enclosure of a speaker kit, with original soldering footage and photos of the finished build.</p><span class="project-link">View project <span aria-hidden="true">↗</span></span></div>
+          </a></article>
+          <article class="project-card"><a class="project-card-link" href="projects/iphone.html">
+            <div class="project-cover "><img src="assets/projects/iphone-parts.webp" width="1200" height="792" alt="Disassembled iPhones, displays, and repair tools arranged on a work surface" loading="lazy"></div>
+            <div class="project-card-copy"><p class="project-type">Personal project · Troubleshooting &amp; repair</p><h3>iPhone repairs</h3><p>Replacing an iPhone 6 screen and working through iPhone 5 motherboard and battery issues using donor components.</p><span class="project-link">View project <span aria-hidden="true">↗</span></span></div>
+          </a></article>
+          <article class="project-card"><a class="project-card-link" href="projects/pricing-initiative.html">
+            <div class="project-cover project-cover--text" aria-hidden="true"><span>UL Solutions · Project review</span><strong>Department<br>project review.</strong></div>
+            <div class="project-card-copy"><p class="project-type">UL Solutions · Project information &amp; analysis</p><h3>Department pricing initiative</h3><p>Collecting consistent project information so the department could examine trends across its completed work.</p><span class="project-link">View project <span aria-hidden="true">↗</span></span></div>
+          </a></article>
       </div>
-    </section>
-
-    <section class="section industry-section" aria-labelledby="team-title">
-      <div class="container">
-        <div class="section-heading">
-          <div><p class="eyebrow">More project work</p><h2 id="team-title">Team &amp; industry projects.</h2></div>
-          <p>Applying engineering thinking with teammates,<br class="desktop-break"> technicians, and engineers.</p>
-        </div>
-        <div class="project-accordion">
-          <details class="project-detail">
-            <summary><span class="project-number" aria-hidden="true">01</span><span><span class="project-type">UIC Formula SAE · Design concepts</span><span class="detail-title">Vehicle push bar</span></span><span class="expand-icon" aria-hidden="true">+</span></summary>
-            <div class="detail-body">
-              <div><h3>The challenge</h3><p>Explore a safer way to move the Formula SAE car without pushing directly on its frame.</p></div>
-              <div><h3>My contribution</h3><p>I worked with teammates to develop different push-bar concepts in SolidWorks and discuss how each design could support moving the vehicle.</p></div>
-              <div><h3>What I practiced</h3><p>CAD modeling, comparing design concepts, and communicating ideas within a team. My involvement focused on concept development.</p></div>
-            </div>
-          </details>
-          <details class="project-detail">
-            <summary><span class="project-number" aria-hidden="true">02</span><span><span class="project-type">UL Solutions · Fluids laboratory</span><span class="detail-title">Test reference guides</span></span><span class="expand-icon" aria-hidden="true">+</span></summary>
-            <div class="detail-body">
-              <div><h3>The challenge</h3><p>Infrequently performed tests created knowledge gaps. Technicians needed clearer guidance to connect the standards, datasheets, and practical setup requirements.</p></div>
-              <div><h3>My contribution</h3><p>I created digital reference guides for six tests, combining the associated UL standards, Test Data Sheets, and lab technician guidance. The guides covered equipment, setup, procedures, and potential risks.</p></div>
-              <div><h3>The deliverable</h3><p>Standardized reference materials designed to make test information easier to find and support knowledge retention across the lab.</p></div>
-            </div>
-          </details>
-          <details class="project-detail">
-            <summary><span class="project-number" aria-hidden="true">03</span><span><span class="project-type">UL Solutions · Project analysis</span><span class="detail-title">Pricing initiative</span></span><span class="expand-icon" aria-hidden="true">+</span></summary>
-            <div class="detail-body">
-              <div><h3>The goal</h3><p>Help the department understand patterns across its completed projects as part of a pricing initiative.</p></div>
-              <div><h3>My contribution</h3><p>I reviewed completed projects and filled out structured surveys containing project information to support the team’s analysis.</p></div>
-              <div><h3>What I practiced</h3><p>Reviewing records carefully, organizing information consistently, and connecting project details to broader business questions.</p></div>
-            </div>
-          </details>
-        </div>
-        <p class="confidentiality-note">UL Solutions projects are described at a high level to respect confidentiality. Internal documents, test details, and company data are not shared.</p>
-      </div>
-    </section>
+    </div></section>
   </main>
   <footer class="site-footer" id="contact">
     <div class="container footer-top">
